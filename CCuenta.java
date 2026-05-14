@@ -2,7 +2,7 @@ package cuentas;
 
 public class CCuenta {
 
-    private String nombre;
+    private String nombre1;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
@@ -11,7 +11,7 @@ public class CCuenta {
     }
 
     public CCuenta(String nom, String cue, double sal, double tipo) {
-        nombre = nom;
+        nombre1 = nom;
         cuenta = cue;
         saldo = sal;
     }
@@ -51,14 +51,14 @@ public class CCuenta {
      * @return the nombre
      */
     public String getNombre() {
-        return nombre;
+        return nombre1;
     }
 
     /**
      * @param nombre the nombre to set
      */
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nombre1 = nombre;
     }
 
     /**
