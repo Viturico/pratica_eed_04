@@ -1,5 +1,10 @@
 package cuentas;
 
+/**
+ * Esta clase contiene los atributos y metodos de una cuenta
+ * @author Alby Rodríguez
+ * @version 1.0
+ */
 public class CCuenta {
 
     private String nombre1;
@@ -7,19 +12,41 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    /**
+     * Metodo constructor por defecto
+     */
     public CCuenta() {
     }
 
+    /**
+     * Metodo constructor parametrizado
+     * @param nom Nombre del titular de la cuenta
+     * @param cue Número identificador de la cuenta
+     * @param sal Saldo inicial de la cuenta
+     * @param tipo Tipo de interés aplicado
+     */
     public CCuenta(String nom, String cue, double sal, double tipo) {
         nombre1 = nom;
         cuenta = cue;
         saldo = sal;
     }
 
+    /**
+     * Devuelve el saldo actual de la cuenta
+     * @return Saldo disponible en cuenta
+     */
     public double estado() {
         return getSaldo();
     }
 
+    /**
+     * Retira una cantidad de la cuenta
+     * @param cantidad Cantidad a retirar de la cuenta
+     * @throws Exception Si la cantidad es igual o inferior a 0
+     * @throws Exception Si la cantidad es insuficiente
+     * @see CCuenta#ingresar(double)
+     * @see CCuenta#estado()
+     */
     public void retirar(double cantidad) {
         try {
             System.out.println("Retiro en cuenta:" + cantidad);
@@ -35,6 +62,12 @@ public class CCuenta {
         }
     }
 
+    /**
+     * Ingresa una cantidad en la cuenta
+     * @param cantidad Cantidad a ingresar en cuenta
+     * @throws Exception si la cantidad es negativa
+     * @see CCuenta#retirar(double)
+     */
     public void ingresar(double cantidad) {
         try {
             System.out.println("Ingreso en cuenta:" + cantidad);
@@ -48,56 +81,57 @@ public class CCuenta {
     }
 
     /**
-     * @return the nombre
+     * @return Nombre del titular de la cuenta
      */
     public String getNombre() {
         return nombre1;
     }
 
     /**
-     * @param nombre the nombre to set
+     * @param nombre Nombre a del titular a aplicar
      */
     public void setNombre(String nombre) {
         this.nombre1 = nombre;
     }
 
     /**
-     * @return the cuenta
+     * @return Número de cuenta
      */
     public String getCuenta() {
         return cuenta;
     }
 
     /**
-     * @param cuenta the cuenta to set
+     * @param cuenta Número de cuenta a aplicar
      */
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
     }
 
     /**
-     * @return the saldo
+     * @return Saldo actual en cuenta
+     * @see CCuenta#getSaldo()
      */
     public double getSaldo() {
         return saldo;
     }
 
     /**
-     * @param saldo the saldo to set
+     * @param saldo Saldo a establecer en cuenta
      */
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
     /**
-     * @return the tipoInterés
+     * @return Tipo de interés aplicado
      */
     public double getTipoInterés() {
         return tipoInterés;
     }
 
     /**
-     * @param tipoInterés the tipoInterés to set
+     * @param tipoInterés Tipo de interés a aplicar en cuenta
      */
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
