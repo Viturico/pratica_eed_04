@@ -42,8 +42,6 @@ public class CCuenta {
     /**
      * Retira una cantidad de la cuenta
      * @param cantidad Cantidad a retirar de la cuenta
-     * @throws Exception Si la cantidad es igual o inferior a 0
-     * @throws Exception Si la cantidad es insuficiente
      * @see CCuenta#ingresar(double)
      * @see CCuenta#estado()
      */
@@ -65,7 +63,6 @@ public class CCuenta {
     /**
      * Ingresa una cantidad en la cuenta
      * @param cantidad Cantidad a ingresar en cuenta
-     * @throws Exception si la cantidad es negativa
      * @see CCuenta#retirar(double)
      */
     public void ingresar(double cantidad) {
@@ -81,6 +78,7 @@ public class CCuenta {
     }
 
     /**
+     * Obtiene el nombre del titular.
      * @return Nombre del titular de la cuenta
      */
     public String getNombre() {
@@ -88,6 +86,7 @@ public class CCuenta {
     }
 
     /**
+     * Establece el nombre del titular.
      * @param nombre Nombre a del titular a aplicar
      */
     public void setNombre(String nombre) {
@@ -95,6 +94,7 @@ public class CCuenta {
     }
 
     /**
+     * Devuelve el número de cuenta.
      * @return Número de cuenta
      */
     public String getCuenta() {
@@ -102,6 +102,7 @@ public class CCuenta {
     }
 
     /**
+     * Aplica un número de cuenta.
      * @param cuenta Número de cuenta a aplicar
      */
     public void setCuenta(String cuenta) {
@@ -109,6 +110,7 @@ public class CCuenta {
     }
 
     /**
+     * Devuelve el saldo actual en la cuenta.
      * @return Saldo actual en cuenta
      * @see CCuenta#getSaldo()
      */
