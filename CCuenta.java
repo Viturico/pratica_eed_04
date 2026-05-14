@@ -1,7 +1,7 @@
 package cuentas;
 
 /**
- * Esta clase contiene los atributos y metodos de una cuenta
+ * Esta clase contiene los atributos y metodos de una cuenta.
  * @author Alby Rodríguez
  * @version 1.0
  */
@@ -13,13 +13,13 @@ public class CCuenta {
     private double tipoInterés;
 
     /**
-     * Metodo constructor por defecto
+     * Metodo constructor por defecto.
      */
     public CCuenta() {
     }
 
     /**
-     * Metodo constructor parametrizado
+     * Metodo constructor parametrizado.
      * @param nom Nombre del titular de la cuenta
      * @param cue Número identificador de la cuenta
      * @param sal Saldo inicial de la cuenta
@@ -32,7 +32,7 @@ public class CCuenta {
     }
 
     /**
-     * Devuelve el saldo actual de la cuenta
+     * Devuelve el saldo actual de la cuenta.
      * @return Saldo disponible en cuenta
      */
     public double estado() {
@@ -40,7 +40,7 @@ public class CCuenta {
     }
 
     /**
-     * Retira una cantidad de la cuenta
+     * Retira una cantidad de la cuenta.
      * @param cantidad Cantidad a retirar de la cuenta
      * @see CCuenta#ingresar(double)
      * @see CCuenta#estado()
@@ -61,7 +61,7 @@ public class CCuenta {
     }
 
     /**
-     * Ingresa una cantidad en la cuenta
+     * Ingresa una cantidad en la cuenta.
      * @param cantidad Cantidad a ingresar en cuenta
      * @see CCuenta#retirar(double)
      */
@@ -119,6 +119,7 @@ public class CCuenta {
     }
 
     /**
+     * Establece un saldo en cuenta.
      * @param saldo Saldo a establecer en cuenta
      */
     public void setSaldo(double saldo) {
@@ -126,6 +127,7 @@ public class CCuenta {
     }
 
     /**
+     * Devuelve el tipo de interés aplicado.
      * @return Tipo de interés aplicado
      */
     public double getTipoInterés() {
@@ -133,6 +135,7 @@ public class CCuenta {
     }
 
     /**
+     * Establece un tipo de interés a la cuenta.
      * @param tipoInterés Tipo de interés a aplicar en cuenta
      */
     public void setTipoInterés(double tipoInterés) {
